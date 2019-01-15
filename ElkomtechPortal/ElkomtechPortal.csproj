@@ -88,11 +88,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\app_tm.png" />
+    <Content Include="Images\ekt.png" />
+    <Content Include="Images\form_auth.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EdzopController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -104,6 +109,8 @@
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Views\Edzop\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

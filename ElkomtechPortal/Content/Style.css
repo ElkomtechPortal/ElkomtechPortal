@@ -1,0 +1,1141 @@
+﻿/* Wspolne style dla naglowka, stopki i ciala raportow */
+
+body {
+    overflow: hidden;
+}
+
+.clsRequired {
+    color: #FF0000;
+}
+
+.clsHeader {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 42px;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #4B7DA1;
+    border: 0px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #F98406;
+}
+
+.clsMenuBar {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 42px;
+    height: 26px;
+    overflow: visible;
+    cursor: default;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, Times;
+    color: #000000;
+    background-color: #DDDDDD;
+    border: 0px;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #F98406;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #808080;
+}
+
+.clsContentsDefault {
+    font-family: Verdana, Arial, Helvetica, Times;
+    color: #000000;
+    background-color: #F5F5F5;
+}
+
+.clsContents {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 72px;
+    bottom: 24px;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0px;
+    border: 0px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #808080;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #F98406;
+}
+
+.clsFooter {
+    position: absolute;
+    width: 100%;
+    top: auto;
+    left: 0px;
+    bottom: 0px;
+    height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #4B7DA1;
+    border: 0px;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #F98406;
+}
+
+.clsGrid {
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+    .clsGrid td {
+        white-space: nowrap;
+        margin: 0px;
+        padding: 0px;
+        font-family: Verdana, Arial, Helvetica, Times;
+        color: #FFFFFF;
+    }
+
+.clsHeader .clsGrid td {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.clsFooter .clsGrid td {
+    font-size: 9px;
+    vertical-align: middle;
+}
+
+.clsHeader .clsGrid .clsCenter,
+.clsFooter .clsGrid .clsCenter {
+    width: 99%;
+}
+
+.clsLeft {
+    text-align: left;
+}
+
+.clsRight {
+    text-align: right;
+}
+
+.clsCenter {
+    text-align: center;
+}
+
+.clsNormal {
+    font-weight: normal;
+}
+
+.clsBold {
+    font-weight: bold;
+}
+
+.clsItalic {
+    font-style: italic;
+}
+
+.clsUnderlined {
+    text-decoration: underline;
+}
+
+.clsHeader A,
+.clsFooter A {
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+    .clsHeader A:active,
+    .clsFooter A:active {
+        text-decoration: none;
+    }
+
+    .clsHeader A:hover,
+    .clsFooter A:hover {
+        text-decoration: underline;
+    }
+
+.clsFooter B {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.clsHeader img {
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 0;
+    vertical-align: middle;
+}
+
+/**
+ * Styl ikony opisujacej wywolanie menu OLINK WWW.
+ */
+.clsOlinkCallIcon {
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+
+/**
+ * Style dla strony glownej - naglowek.
+ */
+.clsMainPageHeader {
+    text-align: left;
+    font-weight: bold;
+}
+
+.clsMainPageHeaderImg {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/**
+ * Style dla strony glownej - cala tabelka.
+ */
+.clsMainPageItems {
+    background-color: transparent;
+    border-width: 0px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+/**
+ * Style dla strony glownej - celka tabelki.
+ */
+.clsMainPageItem {
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-bottom-color: #808080;
+    border-top-color: #808080;
+    border-bottom-style: solid;
+    border-top-style: solid;
+}
+
+/**
+ * Style dla strony glownej - zaznaczona celka tabelki.
+ */
+.clsMainPageSelectedItem {
+    background-color: #BDD2EC;
+}
+
+/**
+ * Style dla strony glownej - aktualnie wskazywana celka tabelki.
+ */
+.clsMainPageItemOver {
+    background-color: #E6EFF8;
+}
+
+/**
+ * Styl dla elementu TD zawierajacego panel opisujacy aplikacje.
+ */
+.clsMainPageApps {
+    width: 350px;
+    vertical-align: top;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C4C0B9;
+}
+
+/**
+ * Styl dla elementu TD zawierajacego panel opisujacy us�ugi.
+ */
+.clsMainPageSvcs {
+    width: 600px;
+    vertical-align: top;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C4C0B9;
+}
+
+/**
+ * Styl dla calego panelu.
+ */
+.clsMainPagePanel {
+    border: 0px;
+}
+
+/* ######################################## */
+/* Komponenty loadExObj i searchExObjDialog */
+
+/** Styl ikony symbolizujacej pobranie danych o obiekcie Ex. */
+.clsLoadExObjIcon {
+    border: 0px;
+}
+
+/** Styl ikony symbolizujacej wywo�anie selektora topologicznego. */
+.clsSearchExObjIcon {
+    cursor: pointer;
+    margin-left: 3px;
+    border: 0px;
+}
+
+/* ############################################# */
+/* Komponenty loadAddrObj i searchAddrObjDialog */
+
+/** Styl ikony symbolizujacej wywolanie selektora adresowego. */
+.clsSearchAddrObjIcon {
+    cursor: pointer;
+    border: 0px;
+}
+
+/* ##################### */
+/* Komponenty tooltipowe */
+
+/** Styl tooltipa. */
+.clsToolTip {
+    overflow: auto;
+    max-height: 400px;
+    max-width: 800px;
+    min-width: 300px;
+}
+
+.clsToolTipText {
+    font-weight: normal;
+    color: #000000;
+}
+
+/** Styl ikony wywo�ujacej informacje o obiekcie. */
+.clsToolTipImg {
+    border: 0px;
+    cursor: pointer;
+}
+
+/** Styl pola z tekstem opisuj�cego typ obiektu . */
+.clsToolTipObjType {
+    color: #808080;
+    border-bottom-width: 1px;
+    border-bottom-color: #808080;
+    border-bottom-style: solid;
+}
+
+/** Styl tabeli grupujacej informacje w tooltipie. */
+.clsToolTipGrid {
+    border-collapse: collapse;
+}
+
+/** Styl wiersza w tabeli grupujacej informacje w tooltipie. */
+.clsToolTipGridRow {
+}
+
+/** Styl komorek wiersza poprzedajacego sekcje danych. */
+.clsToolTipGridRowBeforeSeparator TD {
+    border-bottom-width: 2px;
+    border-bottom-color: #708090;
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+}
+
+/** Styl komorek wiersza rozpoczynajacego sekcje danych. */
+.clsToolTipGridRowSeparator TD {
+    padding-top: 5px;
+    font-weight: bold;
+    font-style: italic;
+    color: #708090;
+}
+
+/** Styl pola z tekstem opisujacego tabele z nowa klasa danych. */
+.clsToolTipNewDataClass {
+    color: #778899;
+    border-bottom-width: 1px;
+    border-bottom-color: #778899;
+    border-bottom-style: solid;
+}
+
+/* ########### */
+/* Style inne */
+
+/** Styl powoduje wysrodkowanie elementu w pionie */
+.clsVerticalMiddle {
+    vertical-align: middle;
+}
+
+/** Styl powoduje ustawienie elementu na gorze */
+.clsVerticalTop {
+    vertical-align: top;
+}
+
+/** Styl powoduje ustawienie elementu na dole */
+.clsVerticalBottom {
+    vertical-align: bottom;
+}
+
+/** Styl powoduje ustawienie kursora myszki na wartosc pointer (raczka) */
+.clsCursorPointer {
+    cursor: pointer;
+}
+
+/** Styl powoduje ustawienie kursora myszki na wartosc default (raczka) */
+.clsCursorDefault {
+    cursor: default;
+}
+
+/** Naglowki kolumn w tablicy stronicowanej. */
+.paginatedTableHeader {
+    padding-right: 3px;
+    color: #000000;
+}
+
+.paginatedTableHeaderAnchor {
+    text-decoration: none;
+}
+
+.paginatedTableFooter {
+    width: 100%;
+}
+
+.paginatedTableInfo {
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style: solid;
+    border-color: #F1EEE9;
+    border-width: 1px;
+}
+
+    .paginatedTableInfo INPUT {
+        margin-left: 2px;
+    }
+
+/**
+ * Szerokosc kolumny na formularzu do edycji elemetu slownika.
+ */
+.clsDictEdFormCol {
+    width: 290px;
+}
+
+/* ####################################### */
+/* Komponenty kalendarza i zakresu czas�w. */
+
+/** Komponent kalendarza. */
+.clsCalendar {
+}
+
+    /** Komponent kalendarza - kontrolka do wprowadzania daty. */
+    .clsCalendar .clsCalendarDate {
+    }
+
+    /** Komponent kalendarza - pole do wprowadzania daty. */
+    .clsCalendar .clsCalendarDateInput {
+        height: 13px;
+        width: 7em;
+    }
+
+    /** Komponent kalendarza - pole do wprowadzania czasu. */
+    .clsCalendar .clsCalendarTimeInput {
+        width: 40px;
+        margin-right: 1px;
+    }
+
+    /** Komponent kalendarza - pole do wprowadzania czasu z sekundami. */
+    .clsCalendar .clsCalendarTimeInputSeconds {
+        width: 60px;
+        margin-right: 1px;
+    }
+
+    /** Komponent kalendarza - przycisk do ustawiania czasu bie��cego. */
+    .clsCalendar .clsCalendarCurrentDateTime {
+        margin-top: 2px;
+    }
+
+    /** Ikony komponentu kalendarza. */
+    .clsCalendar .clsCalendarIcon {
+        margin-top: 2px;
+        cursor: pointer;
+        border: 0;
+        margin-left: 0px;
+        margin-right: 2px;
+    }
+
+/** Komponent zakresu czas�w. */
+.clsDateTimePeriod {
+}
+
+    /** Ikony komponentu zakresu czas�w. */
+    .clsDateTimePeriod .clsDateTimePeriodIcon {
+        margin-top: 2px;
+        cursor: pointer;
+        border: 0;
+        margin-left: 0px;
+        margin-right: 2px;
+    }
+
+    .clsDateTimePeriod .clsDateTimePeriodSeparatorIcon {
+        margin-top: 2px;
+        cursor: default;
+        border: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+/** Style dla komponentu wxc:suggestionbox */
+.suggestionbox {
+}
+
+    .suggestionbox div {
+        margin: 0px;
+        padding: 0px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        overflow: auto;
+    }
+
+        .suggestionbox div ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+            .suggestionbox div ul li.selected {
+                background-color: #F1F1F1;
+            }
+
+            .suggestionbox div ul li {
+                margin: 0;
+                padding: 2px;
+                display: block;
+                list-style-type: none;
+                cursor: pointer;
+                border-bottom: 1px solid #D3D3D3;
+                border-top: 1px solid #D3D3D3;
+            }
+
+/** Style dla komponentu wxc:selectExObjFormat */
+.notSelectedExObj,
+.selectedExObj {
+    text-decoration: none;
+    cursor: hand;
+}
+
+.notSelectedExObj {
+    font-weight: normal;
+}
+
+.selectedExObj {
+    font-weight: bold;
+    color: #000000;
+}
+
+/** encoding: UTF-8 */
+
+.clsLeft {
+    text-align: left;
+}
+
+.clsRight {
+    text-align: right;
+}
+
+.clsCenter {
+    text-align: center;
+}
+
+.clsTableForm {
+    margin-left: 10px;
+    margin-top: 5px;
+    border-spacing: 5px;
+}
+
+.clsTableBorderForm {
+    margin-left: 10px;
+    margin-top: 5px;
+    border-spacing: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    width: 100%;
+}
+
+.clsLowTopMarginTableForm {
+    margin-left: 10px;
+    margin-top: 0px;
+    border-spacing: 5px;
+}
+
+.clsTableWidthBetweenColumns {
+    width: 100px;
+}
+
+.clsTableHeadline,
+.clsTableHeadlineTight,
+.clsTableHeadLineLocality,
+.clsTableHeadLineStreet {
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: left;
+    width: 200px;
+}
+
+.clsTableHeadLineLocality {
+    margin-left: 5px;
+}
+
+.clsTableHeadLineStreet {
+    margin-left: 20px;
+}
+
+.clsTableHeadlineTight {
+    width: 0px;
+}
+
+.clsTableValue {
+    vertical-align: middle;
+    /* padding-left: 10px; */
+    text-align: left;
+}
+
+.clsSingleColumn {
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.clsTableTop {
+    vertical-align: top;
+}
+
+.clsButton {
+    width: 75px;
+    height: 25px;
+}
+
+.clsWidth100P {
+    width: 100%;
+}
+
+.clsWidth50P {
+    width: 50%;
+}
+
+.clsWidth40P {
+    width: 40%;
+}
+
+.clsWidth25P {
+    width: 25%;
+}
+
+.clsWidth10P {
+    width: 10%;
+}
+
+.clsHeight100P {
+    height: 100%;
+}
+
+.clsWrap,
+.clsSdComment,
+.clsSdFirm,
+.clsCheckbox {
+    overflow: hidden;
+    white-space: normal;
+    display: block;
+}
+
+.clsWrapHeader {
+    overflow: hidden;
+    white-space: normal;
+    display: table-cell;
+}
+
+.clsSdFirm {
+    width: 100px;
+}
+
+.clsSdComment {
+    width: 300px;
+}
+
+.clsCheckbox {
+    width: 30px;
+}
+
+.clsTextArea {
+    width: 300px;
+    height: 50px;
+}
+
+.clsTextAreaLow {
+    width: 300px;
+    height: 2.5em;
+}
+
+.clsConnFormArrangHeader {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.clsDailySwitchPlanText {
+    margin-left: 3px;
+    width: 195px;
+}
+
+.clsDailySwitchPlanSelect {
+    margin-left: 3px;
+    width: 199px;
+}
+
+.clsLeftBtnDialog {
+    padding-right: 20px;
+    text-align: right;
+}
+
+.clsRightBtnDialog {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.clsFilterColumnHeader {
+    display: none;
+}
+
+.rich-stglpanel-body {
+    overflow: visible;
+}
+
+.clsJumpScada {
+    text-decoration: underline;
+    color: #000000;
+    cursor: hand;
+}
+
+.clsLink,
+.clsStatLink {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    cursor: hand;
+}
+
+a.clsLink:visited,
+a.clsStatLink:visited {
+    color: black;
+}
+
+a.clsStatLink:hover {
+    color: black;
+}
+
+a.clsLink:hover {
+    color: #0078d0;
+}
+
+table {
+    padding: 20px 20px 20px 20px;
+}
+
+.togglePanelStyle {
+    height: 100%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    writing-mode: tb-rl;
+    font-size: medium;
+}
+
+.clsConfigLink:hover {
+    text-decoration: underline;
+}
+
+.clsStatLinkText {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.clsFilterDesc {
+    color: #4B7DA1;
+    font-weight: bold;
+}
+
+.clsOutJobCount {
+    background-color: #FFA07A;
+}
+
+.clsWrapToolTip {
+    width: 300px;
+    white-space: normal;
+}
+
+.clsBreakFlg {
+    background-color: #EBA4EB;
+}
+
+/* Kolory wierszy */
+
+TABLE.clsSdTable TR.clsSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDStartedJob {
+    background-color: #FFAA77;
+    /*#FFDAAF;*/
+}
+
+TABLE.clsSdTable TR.clsSDStartedJobSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDStrtdJobDisUnit {
+    background-color: #FA8072;
+    /* salmon */
+}
+
+TABLE.clsSdTable TR.clsSDStrtdJobDisUnitSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDFinishedJob {
+    background-color: #ACCDA9;
+}
+
+TABLE.clsSdTable TR.clsSDFinishedJobSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDEngagedUnit {
+    background-color: #FFEFD5;
+    /* papayawhip */
+}
+
+TABLE.clsSdTable TR.clsSDEngagedUnitSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDOtherJob {
+    background-color: #DBEDFD;
+}
+
+TABLE.clsSdTable TR.clsSDOtherJobSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDAccOtherJob {
+    background-color: #B0E0E6;
+}
+
+TABLE.clsSdTable TR.clsSDAccOtherJobSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDNewReport {
+    background-color: #F0E68C;
+    /* khaki */
+}
+
+TABLE.clsSdTable TR.clsSDNewReportSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDNOMPPPermition {
+    background-color: #FFA07A;
+    /* #FFDAAF;*/
+}
+
+TABLE.clsSdTable TR.clsSDNOMPPPermitionSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDWorkEnded {
+    background-color: #FFA07A;
+    /* #FFDAAF;*/
+}
+
+TABLE.clsSdTable TR.clsSDWorkEndedSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsSDWorkCanceled {
+    background-color: yellow
+    /* #FFDAAF;*/
+}
+
+TABLE.clsSdTable TR.clsSDWorkInProgress {
+    background-color: #FFC0B0;
+}
+
+TABLE.clsSdTable TR.clsSDWorkCanceledSelectedRow {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR.clsUnPlanned {
+    background-color: lavender;
+}
+
+TABLE.clsSdTable TR.clsUnPlannedSelectedRow {
+    background-color: lavender;
+}
+
+TABLE.clsSdTable TR.clsSelectedRow TD.clsSdWN {
+    background-color: #D2B48C;
+    /* tan */
+}
+
+TABLE.clsSdTable TR TD.clsSdWN {
+}
+
+TABLE.clsSdTable {
+    background-color: #F5F5F5;
+}
+
+    TABLE.clsSdTable TR.clsSelectedRow TD.clsSdWNMk {
+        background-color: #D2B48C;
+        /* tan */
+    }
+
+    TABLE.clsSdTable TR TD.clsSdWNMk {
+        background-color: #FFA07A;
+        /* #FFDAAF;*/
+    }
+
+/* Style menu. */
+*.clsImgMenuItem {
+    margin-top: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.clsCalendarInput {
+    margin-top: 4px;
+    margin-left: 5px;
+    height: 13px;
+    width: 7em;
+}
+
+.clsCalendarButton {
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.clsReportDate {
+    font-size: 8pt;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.clsImgModificationType {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 3px;
+    vertical-align: bottom;
+}
+
+/** Przedefiniowany styl z common.css z biblioteki weblib. */
+.clsMenuBar {
+    /* height: 26px; */
+    height: 27px;
+}
+
+/** Styl komórki z opisem. */
+.clsDescription {
+    max-width: 400px;
+    min-width: 200px;
+    white-space: normal;
+}
+
+/** Styl tabeli z raportem. */
+.clsReportTable {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/** Styl przycisku do kasowania filtracji. */
+*.clsImgFilterClear {
+    margin-left: 1px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/** Styl ikony wywołania raportu o obiekcie zserializowanym. */
+.clsImgObject {
+    border: 0;
+    margin-left: 5px;
+    vertical-align: bottom;
+}
+
+/* Dymek. */
+*.clsTooltip {
+    max-width: 500px;
+    max-height: 150px;
+    min-width: 150px;
+    white-space: pre-wrap;
+    /* css-3 */
+    word-wrap: break-word;
+    /* IE 5.5+ */
+    white-space: -moz-pre-wrap;
+    /* Mozilla */
+    white-space: -pre-wrap;
+    /* Opera */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    overflow: auto;
+}
+
+*.clsLabel {
+    color: #BC8F8F;
+    font-weight: bold;
+}
+
+*.clsObjectCaption {
+    font-size: x-small;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.paginatedTableHeader {
+    padding-right: 3px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.rich-table-header-continue {
+    background-color: #F1EEE9;
+}
+
+    .rich-table-header-continue .rich-table-headercell {
+        background-color: #F1EEE9;
+    }
+
+.floating-menu {
+    position: fixed;
+    z-index: 100;
+    width: 99%;
+}
+
+.clsSettingsEditorForm {
+    width: 1000px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clsOddRow {
+    background-color: #FFFFFF;
+}
+
+.clsEvenRow {
+    background-color: #F1F1F1;
+}
+
+fieldset {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.clsFieldSetDesc {
+    width: 400px;
+    white-space: normal;
+    display: block;
+}
+
+.clsBoldValue {
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.clsNoBorderInfoTab TR TH {
+    vertical-align: top;
+    border: 0;
+    padding: 2pt;
+    padding-left: 3pt;
+    padding-right: 3pt;
+    height: 0;
+    background-color: #FFFFFF;
+}
+
+.clsNoBorderInfoTab TR TD {
+    border: 0;
+    padding: 2pt;
+    padding-left: 3pt;
+    padding-right: 3pt;
+    height: 0;
+}
+
+.clsNoBorderInfoTab {
+    font-family: Verdana, Arial, Arial CE, Helvetica, Times;
+    font-size: small;
+    border: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+    .clsNoBorderInfoTab TR TD A.clsOlinkAnchor {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+.clsGray {
+    color: gray;
+}
+
+.clsMsgGrpContentsSelected {
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    left: 0px;
+    bottom: 30%;
+    height: auto;
+    overflow: auto;
+    white-space: nowrap;
+    border: 0px;
+}
+
+.clsMsgGrpFootersSelected {
+    position: absolute;
+    width: 100%;
+    top: auto;
+    left: 0px;
+    bottom: 0px;
+    height: 30%;
+    overflow: auto;
+    white-space: nowrap;
+    border: 0px;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #F98406;
+}
+
+.clsWhiteSpaceNoWrap {
+    white-space: nowrap;
+}
+
+.clsCenterRowColSpanHeader > div {
+    margin: auto
+}
+
+.rich-shuttle-source-row-selected,
+.rich-shuttle-target-row-selected,
+.rich-shuttle-source-cell,
+.rich-shuttle-target-cell,
+.rich-shuttle-source-cell-selected *,
+.rich-shuttle-target-cell-selected * {
+    text-align: left !important;
+}

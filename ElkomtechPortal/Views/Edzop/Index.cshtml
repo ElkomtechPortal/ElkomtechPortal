@@ -1,0 +1,972 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html lang="uk" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>EDZOP - Видача нового наряду</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml">
+    <meta charset="utf-8">
+    <link href="~/Content/Style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--?xml version="1.0" encoding="UTF-8" ?-->
+    <span id="tmplPage:forms:enCons2UnitPanel"></span>
+    <span id="tmplPage:forms:subSt2LinePanel"></span>
+
+    <form name="tmplPage:headerForm" id="tmplPage:headerForm" action="javascript:A4J.AJAX.SubmitForm('tmplPage:headerForm',{'similarityGroupingId':'tmplPage:headerForm','actionUrl':'/sdis/jsp/xn/editForm.jspx','containerId':'tmplPage:j_id1','parameters':{'tmplPage:headerForm':'tmplPage:headerForm'} } )"
+          method="post" target="">
+        <span class="clsHeader" id="tmplPage:headerForm:tmplHeader">
+            <table class="clsGrid">
+                <tbody>
+                    <tr>
+                        <td class="clsLeft">
+                            <a title="Головна сторінка програми" href="http://oms-ua/sdis">
+                                <img alt="Головна сторінка програми"
+                                     src="~/Images/app_tm.png">
+                            </a>
+                        </td>
+                        <td class="clsCenter">
+                            <table class="clsGrid">
+                                <tbody>
+                                    <tr>
+                                        <td class="clsLeft">Планування роботи та винятки вер. 9.6.0.1</td>
+                                        <td class="clsRight">
+                                            <span id="tmplPage:headerForm:j_id203">
+                                                <a title="Вийдіть із користувача"
+                                                   href="https://oms-ua/cas/logout">
+                                                    <img src="~/Images/form_auth.png">Ruslan
+                                                    Tkachenko
+                                                </a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsLeft">
+                                            <span id="tmplPage:headerForm:headerPageTitle">
+                                                Форма
+                                                редагування
+                                            </span>
+                                        </td>
+                                        <td class="clsRight">
+
+                                            <span class="clsCursorPointer clsConfigLink" id="tmplPage:headerForm:config">Налаштування</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="clsRight">
+                            <a title="Домашня сторінка APATOR ELKOMTECH S.A." href="http://www.elkomtech.com.pl"
+                               target="_blank"><img alt="Домашня сторінка APATOR ELKOMTECH S.A." src="~/Images/ekt.png"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </span><input name="tmplPage:headerForm" type="hidden" value="tmplPage:headerForm" autocomplete="off"><input name="autoScroll" type="hidden" value="" autocomplete="off">
+        <input name="" id="" type="hidden" value="j_id9">
+    </form>
+
+    <form name="tmplPage:menuForm" id="tmplPage:menuForm" action="/sdis/jsp/xn/editForm.jspx" enctype="application/x-www-form-urlencoded"
+          method="post">
+        <input name="tmplPage:menuForm" type="hidden" value="tmplPage:menuForm">
+        <span class="clsMenuBar" id="tmplPage:menuForm:tmplMenuBar">
+            <table width="100%" class="rich-toolbar " id="tmplPage:menuForm:menu:toolBar" style="border:0" cellspacing="0"
+                   cellpadding="0">
+                <tbody>
+                    <tr valign="middle">
+                        <td class="rich-toolbar-item ">
+                            <div class="rich-menu-item rich-menu-item-enabled" id="tmplPage:menuForm:menu:close"
+                                 onmouseover="RichFaces.Menu.Utils.itemMouseOver(event, this, {} );" onmouseout="RichFaces.Menu.Utils.itemMouseOut(event, this, {} );"
+                                 onclick="RichFaces.Menu.updateItem(event,this);javascript:window.open('', '_self', ''); window.close();">
+                                <span class="rich-menu-item-icon  " id="tmplPage:menuForm:menu:close:icon">
+                                    <img width="16"
+                                         height="16" alt="" src="/sdis/a4j/g/3_3_3.Finalimages/spacer.gif.jspx">
+                                </span><span class="rich-menu-item-label" id="tmplPage:menuForm:menu:close:anchor"></span>
+                            </div>
+                        </td>
+                        <td style="width:100%"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </span><input name="" id="" type="hidden" value="j_id9">
+    </form>
+    <form name="tmplPage:contentForm" id="tmplPage:contentForm" action="/sdis/jsp/xn/editForm.jspx" enctype="application/x-www-form-urlencoded"
+          method="post">
+        <input name="tmplPage:contentForm" type="hidden" value="tmplPage:contentForm">
+        <span class="clsContentsDefault clsContents" id="tmplPage:contentForm:tmplContents">
+            <div class="rich-stglpanel " id="tmplPage:contentForm:contents:j_id216" style="margin: 20px;">
+                <div style="display: none;">
+                    <input name="tmplPage:contentForm:contents:j_id216" id="tmplPage:contentForm:contents:j_id216_input"
+                           type="hidden" value="true" autocomplete="off">
+                </div>
+                <div>
+                    @Html.ActionLink("Back to PLAN", "Index", "Home")
+                </div>
+                <br />
+                <div class="rich-stglpanel-body " id="tmplPage:contentForm:contents:j_id216_body">
+                    <table style="border: solid black 1px; width: 100%; margin-left: 1%; font-size:11px; font-weight: bold">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Підприємство</legend>
+                                        <input type="text" style="width: 100%" value='Краматорские ВЭС АО2 "ДТЄК Донецкие єлектросети"'>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Підрозділ</legend>
+                                        <select size="1" style="width: 100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Славянская ГПС</option>
+                                            <option value="1">Ивановская ГПС</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>НАРЯД-ДОПУСК (для виконання робіт в електроустановках)</legend>
+                                        № <input type="text" style="width: 98%" value="31">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Керівнику робіт (<del>наглядач</del>)</legend>
+                                        <input type="text" style="width: 100%" value="Шевченко Д.А.">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Допускачу</legend>
+                                        <input type="text" style="width: 100%" value="Дежурному">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>З членами бригади</legend>
+                                        <textarea style="width: 100%;">Василів М.С, гр.4</textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Доручається</legend>
+                                        <textarea style="width: 100%;"></textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Роботу почати</legend>
+                                        дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Роботу закінчити</legend>
+                                        дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <h1 style="font-size: 16px;">Таблиця 1. Міри по підготовці робочих місць</h1>
+                    <br>
+                    <table style="border:solid black 1px; width: 98%; margin-left: 1%; font-size:11px; font-weight: bold">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Найменування електроустановок, в яких необхідно провести відключення і встановити заземлення</legend>
+                                        <textarea style="width: 100%;"></textarea>
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>Що повинно бути відключено і де саме заземленно</legend>
+                                        <textarea style="width: 100%;"></textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <fieldset>
+                                        <legend>Окремі вказівки</legend>
+                                        <textarea style="width: 100%;"></textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <fieldset>
+                                        <legend>Наряд видав</legend>
+                                        дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <fieldset>
+                                        Підпис <input style="width:47%" type="text">
+                                        ПІБ <input style="width:47%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <fieldset>
+                                        <legend>Наряд продовжив</legend>
+                                        дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <fieldset>
+                                        Підпис <input style="width:47%" type="text">
+                                        ПІБ <input style="width:47%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <h1 style="font-size: 16px;">Таблиця 2. Дозвіл на підготовку робочих місць і допуск</h1>
+                    <br>
+                    <table style="border:solid black 1px; width: 98%; margin-left: 1%; font-size:11px; font-weight: bold">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>
+                                            Дозвіл на підготовку робочих місць і на допуск видав
+                                            (посада, фамілія та підпис)
+                                        </legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>
+                                            Дата, час
+                                        </legend>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>
+                                            Підписк працівникка, оттримавшого дозвіл на підготовку
+                                            робочих місць та допуск
+                                        </legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <fieldset>
+                                        <legend>
+                                            Робочі місця підготовлені. Під напругою
+                                            залишилися:
+                                        </legend>
+                                        <textarea style="width: 100%;"></textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1">
+                                    <fieldset>
+                                        <legend>
+                                            Допускаючий:
+                                        </legend>
+                                        <input type="checkbox" />
+                                    </fieldset>
+                                </td>
+                                <td colspan="2">
+                                    <fieldset>
+                                        <legend>
+                                            Керівник робіт <del>(наглядач)</del>:
+                                        </legend>
+                                        <input type="checkbox" />
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <h1 style="font-size: 16px;">Таблиця 3. Інструктаж членів бригади (цільовий) при первинному допуску</h1>
+                    <br>
+                    <table style="border:solid black 1px; width: 98%; margin-left: 1%; font-size:11px; font-weight: bold">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>
+                                            Члени бригади (ПІБ)
+                                        </legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>
+                                            Підписи членів бригади, що пройшли інструктаж
+                                        </legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>
+                                            Члени бригади (ПІБ)
+                                        </legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>
+                                            Підписи членів бригади, що пройшли інструктаж
+                                        </legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <fieldset>
+                                        <legend>
+                                            Режимні вказівки та
+                                            вказівки по РЗА:
+                                        </legend>
+                                        <textarea style="width: 100%;">Перенести навантаження з Т-2 на Т-1</textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <fieldset>
+                                        <legend>
+                                            Підписи працівників, які
+                                            провели інструктаж: <b>Допускающий</b>
+                                        </legend>
+                                        <textarea style="width: 100%;">Перенести навантаження з Т-2 на Т-1</textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <fieldset>
+                                        <legend>
+                                            Керівник робіт(<del>спостерігач</del>)
+                                        </legend>
+                                        <textarea style="width: 100%;">Перенести навантаження з Т-2 на Т-1</textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <h1 style="font-size: 16px;">Таблиця 4. Щоденний допуск до роботи та її закінчення</h1>
+                    <br>
+                    <table style="border:solid black 1px; width: 98%; margin-left: 1%; font-size:11px; font-weight: bold">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;" colspan="4">
+                                    <fieldset>
+                                        Бригада проінструктована і допущена на
+                                        робоче місце
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" colspan="2">
+                                    <fieldset>
+                                        Робота закінчена, бригада віддалена
+                                    </fieldset>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="2">
+                                    <fieldset>
+                                        <legend>Найменування робочого місця</legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td rowspan="2">
+                                    <fieldset>
+                                        <legend>Дата, час</legend>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td colspan="2" style="text-align:center">
+                                    Підписи
+                                </td>
+                                <td rowspan="2">
+                                    <fieldset>
+                                        <legend>Дата, час</legend>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td rowspan="2">
+                                    <fieldset>
+                                        <legend>Підпис керівника робіт(<del>спостерігача</del>)</legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Допускающий</legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>Керівник робіт</legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <h1 style="font-size: 16px;">Таблиця 5. Зміни в складі бригади</h1>
+                    <br>
+                    <table style="border:solid black 1px; width: 98%; margin-left: 1%; font-size:11px; font-weight: bold">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>
+                                            Працівник, введений в склад бригади(ПІБ, группа)
+                                        </legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>
+                                            Працівник, виведенний з складу бригади(ПІБ, группа)
+                                        </legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>
+                                            Дата, час
+                                        </legend>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>
+                                            Дозволив(підпис)
+                                        </legend>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <input style="width: 100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <fieldset>
+                                        <legend>Робота повністю закінчена, бригада виведена, заземлення, встановлені бригадою згяті, повідомлено (кому)</legend>
+                                        <input style="width:100%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <fieldset>
+                                        Дата
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        Час
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+
+                                        Кер. робіт <del>наглядач</del>
+                                        <input style="width:60%" type="text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+            </div>
+            <span id="tmplPage:contentForm:contents:units" style="margin: 50px 0px;">
+                <div id="tmplPage:contentForm:contents:j_id393:0:j_id582" style="font-size: 0px;">
+                    <div class="rich-separator " style="height: 1px; background-image: url(/sdis/a4j/g/3_3_3.Finalorg.richfaces.renderkit.html.images.SimpleSeparatorImage/DATB/eAFjYDx-!goLAAdAAnA_.jspx); margin: 0 20px;"></div>
+                </div>
+            </span>
+            <input name="tmplPage:contentForm:contents:save" class="clsButton" id="tmplPage:contentForm:contents:save"
+                   style="margin: 20px;" onclick="A4J.AJAX.Submit('tmplPage:contentForm',event,{'similarityGroupingId':'tmplPage:contentForm:contents:save','actionUrl':'/sdis/jsp/xn/editForm.jspx','containerId':'tmplPage:j_id1','parameters':{'tmplPage:contentForm:contents:save':'tmplPage:contentForm:contents:save','ajaxSingle':'tmplPage:contentForm:contents:save'} } );return false;"
+                   type="button" value="Зберегти">
+        </span><input name="" id="" type="hidden" value="j_id9">
+    </form>
+
+    <form name="tmplPage:footerForm" id="tmplPage:footerForm" action="/sdis/jsp/xn/editForm.jspx" enctype="application/x-www-form-urlencoded"
+          method="post">
+        <input name="tmplPage:footerForm" type="hidden" value="tmplPage:footerForm">
+        <span class="clsFooter" id="tmplPage:footerForm:tmplFooter">
+            <table class="clsGrid">
+                <tbody>
+                    <tr>
+                        <td class="clsLeft"><span class="clsBold">© APATOR ELKOMTECH S.A.</span></td>
+                        <td class="clsCenter">Генерується на 2019-01-10 15:42:50 для SDIS верс. 9.6.0.1</td>
+                        <td class="clsRight"><span id="tmplPage:footerForm:j_id590"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </span><input name="" id="" type="hidden" value="j_id9">
+    </form>
+</body>
+
+</html>
+

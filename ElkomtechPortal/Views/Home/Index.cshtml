@@ -4,5 +4,949 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<html lang="uk" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>EDZOP - Видача нового наряду</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml">
+    <meta charset="utf-8">
+    <link href="~/Content/Style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--?xml version="1.0" encoding="UTF-8" ?-->
+    <span id="tmplPage:forms:enCons2UnitPanel"></span>
+    <span id="tmplPage:forms:subSt2LinePanel"></span>
+
+    <form name="tmplPage:headerForm" id="tmplPage:headerForm" action="javascript:A4J.AJAX.SubmitForm('tmplPage:headerForm',{'similarityGroupingId':'tmplPage:headerForm','actionUrl':'/sdis/jsp/xn/editForm.jspx','containerId':'tmplPage:j_id1','parameters':{'tmplPage:headerForm':'tmplPage:headerForm'} } )"
+          method="post" target="">
+        <span class="clsHeader" id="tmplPage:headerForm:tmplHeader">
+            <table class="clsGrid">
+                <tbody>
+                    <tr>
+                        <td class="clsLeft">
+                            <a title="Головна сторінка програми" href="http://oms-ua/sdis">
+                                <img alt="Головна сторінка програми"
+                                     src="~/Images/app_tm.png">
+                            </a>
+                        </td>
+                        <td class="clsCenter">
+                            <table class="clsGrid">
+                                <tbody>
+                                    <tr>
+                                        <td class="clsLeft">Планування роботи та винятки вер. 9.6.0.1</td>
+                                        <td class="clsRight">
+                                            <span id="tmplPage:headerForm:j_id203">
+                                                <a title="Вийдіть із користувача"
+                                                   href="https://oms-ua/cas/logout">
+                                                    <img src="~/Images/form_auth.png">Ruslan
+                                                    Tkachenko
+                                                </a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="clsLeft">
+                                            <span id="tmplPage:headerForm:headerPageTitle">
+                                                Форма
+                                                редагування
+                                            </span>
+                                        </td>
+                                        <td class="clsRight">
+
+                                            <span class="clsCursorPointer clsConfigLink" id="tmplPage:headerForm:config">Налаштування</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td class="clsRight">
+                            <a title="Домашня сторінка APATOR ELKOMTECH S.A." href="http://www.elkomtech.com.pl"
+                               target="_blank"><img alt="Домашня сторінка APATOR ELKOMTECH S.A." src="~/Images/ekt.png"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </span><input name="tmplPage:headerForm" type="hidden" value="tmplPage:headerForm" autocomplete="off"><input name="autoScroll" type="hidden" value="" autocomplete="off">
+        <input name="" id="" type="hidden" value="j_id9">
+    </form>
+    <form name="tmplPage:menuForm" id="tmplPage:menuForm" action="/sdis/jsp/xn/editForm.jspx" enctype="application/x-www-form-urlencoded"
+          method="post">
+        <input name="tmplPage:menuForm" type="hidden" value="tmplPage:menuForm">
+        <span class="clsMenuBar" id="tmplPage:menuForm:tmplMenuBar">
+            <table width="100%" class="rich-toolbar " id="tmplPage:menuForm:menu:toolBar" style="border:0" cellspacing="0"
+                   cellpadding="0">
+                <tbody>
+                    <tr valign="middle">
+                        <td class="rich-toolbar-item ">
+                            <div class="rich-menu-item rich-menu-item-enabled" id="tmplPage:menuForm:menu:close"
+                                 onmouseover="RichFaces.Menu.Utils.itemMouseOver(event, this, {} );" onmouseout="RichFaces.Menu.Utils.itemMouseOut(event, this, {} );"
+                                 onclick="RichFaces.Menu.updateItem(event,this);javascript:window.open('', '_self', ''); window.close();">
+                                <span class="rich-menu-item-icon  " id="tmplPage:menuForm:menu:close:icon">
+                                    <img width="16"
+                                         height="16" alt="" src="/sdis/a4j/g/3_3_3.Finalimages/spacer.gif.jspx">
+                                </span><span class="rich-menu-item-label" id="tmplPage:menuForm:menu:close:anchor"></span>
+                            </div>
+                        </td>
+                        <td style="width:100%"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </span><input name="" id="" type="hidden" value="j_id9">
+    </form>
+    <form name="tmplPage:contentForm" id="tmplPage:contentForm" action="/sdis/jsp/xn/editForm.jspx" enctype="application/x-www-form-urlencoded"
+          method="post">
+        <input name="tmplPage:contentForm" type="hidden" value="tmplPage:contentForm">
+        <span class="clsContentsDefault clsContents" id="tmplPage:contentForm:tmplContents">
+            <div class="rich-stglpanel " id="tmplPage:contentForm:contents:j_id216" style="margin: 20px;">
+                <div style="display: none;">
+                    <input name="tmplPage:contentForm:contents:j_id216" id="tmplPage:contentForm:contents:j_id216_input"
+                           type="hidden" value="true" autocomplete="off">
+                </div>   
+                <div>
+                    @Html.ActionLink("Back to EDZOP", "Index", "Edzop")
+                </div>
+                <br />
+                <div class="rich-stglpanel-body " id="tmplPage:contentForm:contents:j_id216_body">
+                    <table style="border:solid black 1px; width: 98%; margin-left: 1%; font-size:11px; font-weight: bold">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <legend>Назва</legend>
+                                        <select size="1" style="width: 100%;">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">ЦДС</option>
+                                            <option value="1">КМС</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td colspan="1" style="text-align: center;">
+                                    <fieldset>
+                                        <legend>Код</legend>
+                                        <input type="text" style="width: 100%;">
+                                    </fieldset>
+                                </td>
+                                <td colspan="1" style="text-align: center;">
+                                    <fieldset>
+                                        <legend>Номер заявки</legend>
+                                        <input type="text" style="width: 100%;">
+                                    </fieldset>
+                                </td>
+                                <td colspan="1" style="text-align: center;">
+                                    <fieldset>
+                                        <legend>Вид ремонта</legend>
+                                        <select size="1" style="width: 100%;">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">кап</option>
+                                            <option value="1">нап</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td colspan="3" style="text-align: center; ">
+                                    <fieldset>
+                                        Заявка на виведення з ремонту устаткування
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align: left;">
+                                    <fieldset>
+                                        <legend>Обєкт, ПС, ВЛ ,КЛ ПС</legend>
+                                        <input type="text" style="width: 100%;" value="Райгородок-35кВ">
+                                    </fieldset>
+
+                                </td>
+                                <td colspan="1" style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Операція:</legend>
+                                        <select size="1" style="width: 100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">ВКЛ</option>
+                                            <option value="1">ВИКЛ</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td colspan="1" style="text-align: center;">
+                                    <fieldset>
+                                        <legend>ВАВ</legend>
+                                        <select size="1" style="width: 90%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">2год</option>
+                                            <option value="1">3год</option>
+                                        </select>
+                                    </fieldset>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <fieldset>
+                                        <legend>Обладнання,пристрій:</legend>
+                                        <textarea style="width: 100%; "></textarea>
+                                    </fieldset>
+                                </td>
+                                <td colspan="2">
+                                    <fieldset>
+                                        <legend>Відповідальна особа:</legend>
+                                        <select size="1">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <fieldset>
+
+                                        <legend>Підрозділи, заявник (ПІБ):</legend>
+                                        <textarea style="width: 100%; "></textarea>
+                                    </fieldset>
+                                </td>
+                                <td colspan="2">
+                                    <fieldset>
+                                        <legend>Прийняв (ПІБ) дата, час:</legend>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">
+                                    <fieldset>
+                                        <legend> Заявл. час:</legend>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Щодня без вкл.</legend>
+                                        <input type="text" style="width: 100%; ">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Дозволений, час:</legend>
+                                        <input type="text" style="width: 100%; ">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Щодня без вкл.</legend>
+                                        <input type="text" style="width: 100%; ">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>Факт:</legend>
+                                        <input type="text" style="width: 100%; ">
+                                    </fieldset>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="text-align: left;" colspan="7">
+                                    <fieldset>
+                                        <legend>Зміст робіт:</legend>
+                                        <textarea style="width: 100%;">Кап. ремонт СР-2-35 кВ, ШР-35 Кв, Райгородська</textarea>
+                                    </fieldset>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;" colspan="7">
+                                    <fieldset>
+                                        <legend>Міри безпеки</legend>
+                                        <textarea style="width: 100%;">откл. :МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ, МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ, МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,
+                                                </textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;" colspan="7">
+                                    <fieldset>
+                                        <legend>
+                                            Режимні вказівки та
+                                            вказівки по РЗА:
+                                        </legend>
+                                        <textarea style="width: 100%;">Перенести навантаження з Т-2 на Т-1</textarea>
+                                    </fieldset>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <table style="border:solid black 1px; width: 98%; margin-left: 1%; font-size:11px; font-weight: bold">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;" colspan="4">
+                                    <fieldset>
+                                        Передана на погодження
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center; " colspan="3">
+                                    <fieldset>
+                                        Відповідь
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>Дата, час</legend>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" colspan="2">
+                                    <fieldset>
+                                        <legend>Організація</legend>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Brynów Chorzów Moszczenica</option>
+                                            <option value="1">Chorzów</option>
+                                            <option value="14">Gliwice</option>
+                                            <option value="12">Goczałkowice</option>
+                                            <option value="4">Katowice</option>
+                                            <option value="8">Moszczenica</option>
+                                            <option value="5">Nowy Bytom</option>
+                                            <option value="15">Stacja obca</option>
+                                            <option value="9">Paruszowiec</option>
+                                            <option value="2">Piekary</option>
+                                            <option value="10">Rokitnica</option>
+                                            <option value="11">Studzienna</option>
+                                            <option value="3">Tychy</option>
+                                            <option value="13">Obsługa stała</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>ПІБ прийняв</legend>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>Дата, час</legend>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>Погоджено, відмовленос</legend>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Погоджено</option>
+                                            <option value="1">Відмовлено</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>ПІБ передав</legend>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue" colspan="2">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Brynów Chorzów Moszczenica</option>
+                                            <option value="1">Chorzów</option>
+                                            <option value="14">Gliwice</option>
+                                            <option value="12">Goczałkowice</option>
+                                            <option value="4">Katowice</option>
+                                            <option value="8">Moszczenica</option>
+                                            <option value="5">Nowy Bytom</option>
+                                            <option value="15">Stacja obca</option>
+                                            <option value="9">Paruszowiec</option>
+                                            <option value="2">Piekary</option>
+                                            <option value="10">Rokitnica</option>
+                                            <option value="11">Studzienna</option>
+                                            <option value="3">Tychy</option>
+                                            <option value="13">Obsługa stała</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Погоджено</option>
+                                            <option value="1">Відмовлено</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue" colspan="2">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Brynów Chorzów Moszczenica</option>
+                                            <option value="1">Chorzów</option>
+                                            <option value="14">Gliwice</option>
+                                            <option value="12">Goczałkowice</option>
+                                            <option value="4">Katowice</option>
+                                            <option value="8">Moszczenica</option>
+                                            <option value="5">Nowy Bytom</option>
+                                            <option value="15">Stacja obca</option>
+                                            <option value="9">Paruszowiec</option>
+                                            <option value="2">Piekary</option>
+                                            <option value="10">Rokitnica</option>
+                                            <option value="11">Studzienna</option>
+                                            <option value="3">Tychy</option>
+                                            <option value="13">Obsługa stała</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Погоджено</option>
+                                            <option value="1">Відмовлено</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue" colspan="2">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Brynów Chorzów Moszczenica</option>
+                                            <option value="1">Chorzów</option>
+                                            <option value="14">Gliwice</option>
+                                            <option value="12">Goczałkowice</option>
+                                            <option value="4">Katowice</option>
+                                            <option value="8">Moszczenica</option>
+                                            <option value="5">Nowy Bytom</option>
+                                            <option value="15">Stacja obca</option>
+                                            <option value="9">Paruszowiec</option>
+                                            <option value="2">Piekary</option>
+                                            <option value="10">Rokitnica</option>
+                                            <option value="11">Studzienna</option>
+                                            <option value="3">Tychy</option>
+                                            <option value="13">Obsługa stała</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Погоджено</option>
+                                            <option value="1">Відмовлено</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue" colspan="2">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Brynów Chorzów Moszczenica</option>
+                                            <option value="1">Chorzów</option>
+                                            <option value="14">Gliwice</option>
+                                            <option value="12">Goczałkowice</option>
+                                            <option value="4">Katowice</option>
+                                            <option value="8">Moszczenica</option>
+                                            <option value="5">Nowy Bytom</option>
+                                            <option value="15">Stacja obca</option>
+                                            <option value="9">Paruszowiec</option>
+                                            <option value="2">Piekary</option>
+                                            <option value="10">Rokitnica</option>
+                                            <option value="11">Studzienna</option>
+                                            <option value="3">Tychy</option>
+                                            <option value="13">Obsługa stała</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Погоджено</option>
+                                            <option value="1">Відмовлено</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue" colspan="2">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Brynów Chorzów Moszczenica</option>
+                                            <option value="1">Chorzów</option>
+                                            <option value="14">Gliwice</option>
+                                            <option value="12">Goczałkowice</option>
+                                            <option value="4">Katowice</option>
+                                            <option value="8">Moszczenica</option>
+                                            <option value="5">Nowy Bytom</option>
+                                            <option value="15">Stacja obca</option>
+                                            <option value="9">Paruszowiec</option>
+                                            <option value="2">Piekary</option>
+                                            <option value="10">Rokitnica</option>
+                                            <option value="11">Studzienna</option>
+                                            <option value="3">Tychy</option>
+                                            <option value="13">Obsługa stała</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Погоджено</option>
+                                            <option value="1">Відмовлено</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue" colspan="2">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Brynów Chorzów Moszczenica</option>
+                                            <option value="1">Chorzów</option>
+                                            <option value="14">Gliwice</option>
+                                            <option value="12">Goczałkowice</option>
+                                            <option value="4">Katowice</option>
+                                            <option value="8">Moszczenica</option>
+                                            <option value="5">Nowy Bytom</option>
+                                            <option value="15">Stacja obca</option>
+                                            <option value="9">Paruszowiec</option>
+                                            <option value="2">Piekary</option>
+                                            <option value="10">Rokitnica</option>
+                                            <option value="11">Studzienna</option>
+                                            <option value="3">Tychy</option>
+                                            <option value="13">Obsługa stała</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Погоджено</option>
+                                            <option value="1">Відмовлено</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue" colspan="2">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Brynów Chorzów Moszczenica</option>
+                                            <option value="1">Chorzów</option>
+                                            <option value="14">Gliwice</option>
+                                            <option value="12">Goczałkowice</option>
+                                            <option value="4">Katowice</option>
+                                            <option value="8">Moszczenica</option>
+                                            <option value="5">Nowy Bytom</option>
+                                            <option value="15">Stacja obca</option>
+                                            <option value="9">Paruszowiec</option>
+                                            <option value="2">Piekary</option>
+                                            <option value="10">Rokitnica</option>
+                                            <option value="11">Studzienna</option>
+                                            <option value="3">Tychy</option>
+                                            <option value="13">Obsługa stała</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class=" clsTableValue">
+                                    <fieldset>
+                                        <span>
+                                            <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                            <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        </span>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">Погоджено</option>
+                                            <option value="1">Відмовлено</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;" class="clsTableValue">
+                                    <fieldset>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Заявка розглянута</legend>
+                                        Результат розгляду
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Начальник ЦДС</legend>
+                                        <input type="checkbox">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Начальник СРЗА</legend>
+                                        <input type="checkbox">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend>Начальник СПС </legend>
+                                        <input type="checkbox">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Начальник СВЛ</legend>
+                                        <input type="checkbox">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Начальник СІЗП</legend>
+                                        <input type="checkbox">
+                                    </fieldset>
+                                </td>
+                                <td style="text-align: center;">
+                                    <fieldset>
+                                        <legend> Головний інженер </legend>
+                                        <input type="checkbox">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;" colspan="7">
+                                    <fieldset>
+                                        <legend>Відповідь передано:</legend>
+                                        <textarea style="width: 100%;"></textarea>
+                                    </fieldset>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <span id="tmplPage:contentForm:contents:units" style="margin: 50px 0px;">
+                <div id="tmplPage:contentForm:contents:j_id393:0:j_id582" style="font-size: 0px;">
+                    <div class="rich-separator " style="height: 1px; background-image: url(/sdis/a4j/g/3_3_3.Finalorg.richfaces.renderkit.html.images.SimpleSeparatorImage/DATB/eAFjYDx-!goLAAdAAnA_.jspx); margin: 0 20px;"></div>
+                </div>
+            </span>
+            <input name="tmplPage:contentForm:contents:save" class="clsButton" id="tmplPage:contentForm:contents:save"
+                   style="margin: 20px;" onclick="A4J.AJAX.Submit('tmplPage:contentForm',event,{'similarityGroupingId':'tmplPage:contentForm:contents:save','actionUrl':'/sdis/jsp/xn/editForm.jspx','containerId':'tmplPage:j_id1','parameters':{'tmplPage:contentForm:contents:save':'tmplPage:contentForm:contents:save','ajaxSingle':'tmplPage:contentForm:contents:save'} } );return false;"
+                   type="button" value="Зберегти">
+        </span><input name="" id="" type="hidden" value="j_id9">
+    </form>
+
+    <form name="tmplPage:footerForm" id="tmplPage:footerForm" action="/sdis/jsp/xn/editForm.jspx" enctype="application/x-www-form-urlencoded"
+          method="post">
+        <input name="tmplPage:footerForm" type="hidden" value="tmplPage:footerForm">
+        <span class="clsFooter" id="tmplPage:footerForm:tmplFooter">
+            <table class="clsGrid">
+                <tbody>
+                    <tr>
+                        <td class="clsLeft"><span class="clsBold">© APATOR ELKOMTECH S.A.</span></td>
+                        <td class="clsCenter">Генерується на 2019-01-10 15:42:50 для SDIS верс. 9.6.0.1</td>
+                        <td class="clsRight"><span id="tmplPage:footerForm:j_id590"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </span><input name="" id="" type="hidden" value="j_id9">
+    </form>
+</body>
+
+</html>
 
