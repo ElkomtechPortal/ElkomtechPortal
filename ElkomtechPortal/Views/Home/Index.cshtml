@@ -17,7 +17,7 @@
     <!--?xml version="1.0" encoding="UTF-8" ?-->
     <span id="tmplPage:forms:enCons2UnitPanel"></span>
     <span id="tmplPage:forms:subSt2LinePanel"></span>
-
+    <h1>Заявка на виконання робіт</h1>
     <form name="tmplPage:headerForm" id="tmplPage:headerForm" action="javascript:A4J.AJAX.SubmitForm('tmplPage:headerForm',{'similarityGroupingId':'tmplPage:headerForm','actionUrl':'/sdis/jsp/xn/editForm.jspx','containerId':'tmplPage:j_id1','parameters':{'tmplPage:headerForm':'tmplPage:headerForm'} } )"
           method="post" target="">
         <span class="clsHeader" id="tmplPage:headerForm:tmplHeader">
@@ -108,6 +108,7 @@
                 </div>
                 <br />
                 <div class="rich-stglpanel-body " id="tmplPage:contentForm:contents:j_id216_body">
+                    <h1 style="text-align:center; font-size:18px">Заявка на виконання робіт</h1>
                     <table style="border:solid black 1px; width: 98%; margin-left: 1%; font-size:11px; font-weight: bold">
                         <tbody>
                             <tr>
@@ -145,7 +146,12 @@
                                 </td>
                                 <td colspan="3" style="text-align: center; ">
                                     <fieldset>
-                                        Заявка на виведення з ремонту устаткування
+                                        <legend>Тип заявки</legend>
+                                        <select size="1" style="width: 100%;">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="6">На виведення з ремонту устаткування</option>
+                                            <option value="1">На введення з ремонту устаткування</option>
+                                        </select>
                                     </fieldset>
                                 </td>
                             </tr>
@@ -169,8 +175,8 @@
                                 </td>
                                 <td colspan="1" style="text-align: center;">
                                     <fieldset>
-                                        <legend>ВАВ</legend>
-                                        <select size="1" style="width: 90%">
+                                        <legend>Час аварійної готовності</legend>
+                                        <select size="1" style="width: 100%">
                                             <option selected="selected">Обрати</option>
                                             <option value="6">2год</option>
                                             <option value="1">3год</option>
@@ -216,7 +222,10 @@
                             <tr>
                                 <td style="text-align: left;">
                                     <fieldset>
-                                        <legend> Заявл. час:</legend>
+                                        <legend> Заявл. час робіт:</legend>
+                                        <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        до 
                                         <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
                                         <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
                                     </fieldset>
@@ -259,7 +268,7 @@
                             <tr>
                                 <td style="text-align: left;" colspan="7">
                                     <fieldset>
-                                        <legend>Міри безпеки</legend>
+                                        <legend>Заходи безпеки</legend>
                                         <textarea style="width: 100%;">откл. :МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ, МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ, МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,МВ-35 Кв, ЛР-35 кВ,
                                                 </textarea>
                                     </fieldset>
@@ -307,7 +316,7 @@
                                 </td>
                                 <td style="text-align: center;" colspan="2">
                                     <fieldset>
-                                        <legend>Організація</legend>
+                                        <legend>Організація/підрозділ</legend>
                                         <select size="1" style="width:100%">
                                             <option selected="selected">Обрати</option>
                                             <option value="6">Brynów Chorzów Moszczenica</option>

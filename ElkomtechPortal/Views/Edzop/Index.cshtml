@@ -7,10 +7,15 @@
 <html lang="uk" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <script src="~/Scripts/tooltip.js"></script>
+    <link href="~/Content/Style.css" rel="stylesheet" />
     <title>EDZOP - Видача нового наряду</title>
     <meta http-equiv="Content-Type" content="application/xhtml+xml">
     <meta charset="utf-8">
     <link href="~/Content/Style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
 </head>
 
 <body>
@@ -115,7 +120,12 @@
                                 <td>
                                     <fieldset>
                                         <legend>Підприємство</legend>
-                                        <input type="text" style="width: 100%" value='Краматорские ВЭС АО2 "ДТЄК Донецкие єлектросети"'>
+                                        <select size="1" style="width: 100%">
+                                            <option selected="selected">Краматорские ВЭС АО "ДТЄК Донецкие єлектросети</option>
+                                            <option value="1">Приазовские ВЭС АО "ДТЄК Донецкие єлектросети"</option>
+                                            <option value="1">Високовольтные сети</option>
+                                            <option value="1">ЦДС АО "ДТЄК Донецкие єлектросети"</option>
+                                        </select>
                                     </fieldset>
                                 </td>
                             </tr>
@@ -142,8 +152,14 @@
                             <tr>
                                 <td>
                                     <fieldset>
-                                        <legend>Керівнику робіт (<del>наглядач</del>)</legend>
-                                        <input type="text" style="width: 100%" value="Шевченко Д.А.">
+                                        <legend>Керівнику робіт (<del>наглядачу</del>)</legend>
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
                                     </fieldset>
                                 </td>
                             </tr>
@@ -151,7 +167,13 @@
                                 <td>
                                     <fieldset>
                                         <legend>Допускачу</legend>
-                                        <input type="text" style="width: 100%" value="Дежурному">
+                                        <select size="1" style="width:100%">
+                                            <option selected="selected">Обрати</option>
+                                            <option value="380">Сапранков М.В.</option>
+                                            <option value="340">Співак А.О.</option>
+                                            <option value="390">Шевцов О.В.</option>
+                                            <option value="370">Сергей Петрович Сидоров</option>
+                                        </select>
                                     </fieldset>
                                 </td>
                             </tr>
@@ -166,7 +188,11 @@
                             <tr>
                                 <td>
                                     <fieldset>
-                                        <legend>Доручається</legend>
+                                        <legend>
+                                            Доручається
+                                            <img src="~/Images/12.png" />
+                                            <img src="~/Images/23.png" />
+                                        </legend>
                                         <textarea style="width: 100%;"></textarea>
                                     </fieldset>
                                 </td>
@@ -175,8 +201,8 @@
                                 <td>
                                     <fieldset>
                                         <legend>Роботу почати</legend>
-                                        дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
-                                        час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        Дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        Час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
                                     </fieldset>
                                 </td>
                             </tr>
@@ -184,8 +210,8 @@
                                 <td>
                                     <fieldset>
                                         <legend>Роботу закінчити</legend>
-                                        дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
-                                        час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        Дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        Час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
                                     </fieldset>
                                 </td>
                             </tr>
@@ -203,6 +229,8 @@
                                         <textarea style="width: 100%;"></textarea>
                                     </fieldset>
                                 </td>
+                            </tr>
+                            <tr>
                                 <td>
                                     <fieldset>
                                         <legend>Що повинно бути відключено і де саме заземленно</legend>
@@ -211,7 +239,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
+                                <td>
                                     <fieldset>
                                         <legend>Окремі вказівки</legend>
                                         <textarea style="width: 100%;"></textarea>
@@ -221,89 +249,36 @@
                             <tr>
                                 <td colspan="2">
                                     <fieldset>
-                                        <legend>Бланк переключень <input type="checkbox" /></legend>
-                                        <table style="1px; width: 98%; margin-left: 1%; font-size:11px; font-weight: bold">
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="3">
-                                                        <fieldset>
-                                                            <legend>№ бланку переключень</legend>
-                                                            <input type="text" style="width: 100%" value="31">
-                                                        </fieldset>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <fieldset>
-                                                            дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
-                                                            час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
-                                                        </fieldset>
-                                                    </td>
-                                                    <td>
-                                                        <fieldset>
-                                                            почато <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
-                                                        </fieldset>
-                                                    </td>
-                                                    <td>
-                                                        <fieldset>
-                                                            кінець <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
-                                                        </fieldset>
-                                                    </td>
-                                                <tr>
-                                                    <td colspan="3">
-                                                        <fieldset>
-                                                            <legend>Завдання</legend>
-                                                            <textarea style="width: 100%;"></textarea>
-                                                        </fieldset>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="3">
-                                                        <fieldset>
-                                                            <legend>Послідовність виконання операцій при переключені</legend>
-                                                            <textarea style="width: 100%;">Перенести навантаження з Т-2 на Т-1</textarea>
-                                                        </fieldset>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <legend>
+                                            Бланк переключень
+                                            <span class="tooltip" onmouseover="tooltip.pop(this, '<span class=\'red\'>Hi</span> there', {position:0})">
+                                                <img src="~/Images/34.png" />
+                                            </span>
+                                        </legend>
                                     </fieldset>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
+                                <td>
                                     <fieldset>
                                         <legend>Наряд видав</legend>
-                                        дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
-                                        час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
+                                        Дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        Час <input style="" type="text" readonly="readonly" value="15:42">
+                                        <br /> <br />
+                                        ПІБ <input style="" type="text">
                                     </fieldset>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
+                                <td>
                                     <fieldset>
-                                        Підпис <input style="width:47%" type="text">
-                                        ПІБ <input style="width:47%" type="text">
+                                        <legend>Наряд продовжив <input type="checkbox" /></legend>
+                                        Дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
+                                        Час <input style="" type="text" readonly="readonly" value="15:42">
+                                        <br /> <br />
+                                        ПІБ <input style="" type="text">
                                     </fieldset>
                                 </td>
                             </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <fieldset>
-                                        <legend>Наряд продовжив</legend>
-                                        дата <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
-                                        час <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
-                                    </fieldset>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <fieldset>
-                                        Підпис <input style="width:47%" type="text">
-                                        ПІБ <input style="width:47%" type="text">
-                                    </fieldset>
-                                </td>
-                            </tr>
+
                         </tbody>
                     </table>
                     <br>
@@ -325,7 +300,7 @@
                                 <td style="text-align: center;">
                                     <fieldset>
                                         <legend>
-                                            Дата, час
+                                            Дата, Час
                                         </legend>
                                         <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
                                         <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
@@ -430,7 +405,7 @@
                                         <legend>
                                             Допускаючий:
                                         </legend>
-                                        <input type="checkbox" />
+                                        <input style="width: 100%;" type="text" value="Допустив" disabled="disabled" />
                                     </fieldset>
                                 </td>
                                 <td colspan="2">
@@ -438,7 +413,7 @@
                                         <legend>
                                             Керівник робіт <del>(наглядач)</del>:
                                         </legend>
-                                        <input type="checkbox" />
+                                        <input style="width: 100%;" type="text" value="Не доппустив" disabled="disabled" />
                                     </fieldset>
                                 </td>
                             </tr>
@@ -567,7 +542,7 @@
                                 </td>
                                 <td rowspan="2">
                                     <fieldset>
-                                        <legend>Дата, час</legend>
+                                        <legend>Дата, Час</legend>
                                         <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
                                         <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
                                     </fieldset>
@@ -577,7 +552,7 @@
                                 </td>
                                 <td rowspan="2">
                                     <fieldset>
-                                        <legend>Дата, час</legend>
+                                        <legend>Дата, Час</legend>
                                         <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
                                         <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
                                     </fieldset>
@@ -834,7 +809,7 @@
                                 <td>
                                     <fieldset>
                                         <legend>
-                                            Дата, час
+                                            Дата, Час
                                         </legend>
                                         <input name="" style="width: 80px;" type="text" readonly="readonly" value="10-01-2019">
                                         <input style="width: 40px;" type="text" readonly="readonly" value="15:42">
