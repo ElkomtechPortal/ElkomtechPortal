@@ -14,4 +14,6 @@ namespace ElkomtechPortal.Controllers
             return View();
         }
     }
+
+
 }

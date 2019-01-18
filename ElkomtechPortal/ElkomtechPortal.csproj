@@ -136,9 +136,14 @@
     <Content Include="Images\23.png" />
     <Content Include="Images\34.png" />
     <Content Include="Images\app_tm.png" />
+    <Content Include="Images\download.png" />
     <Content Include="Images\ekt.png" />
     <Content Include="Images\form_auth.png" />
+    <Content Include="App_Data\Edzop.pdf" />
+    <Content Include="App_Data\Plan.pdf" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
+    <Content Include="Images\pdfdownload.png" />
+    <Content Include="Images\Снимок.PNG" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\jquery-ui-1.12.1.js" />
@@ -171,7 +176,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
